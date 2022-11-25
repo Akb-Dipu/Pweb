@@ -1,60 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Monoton&display=swap" rel="stylesheet">
-<style type="text/tailwindcss">
-
-  </style>
-</head>
-<body>
-<!--Background-->
-
-<div class="h-96 bg-gradient-to-r from-sky-500 to-indigo-500">
-                    <!--Header-->
-<header class="text-gray-600 body-font"   >
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+ 
+  <script src="https://cdn.tailwindcss.com"></script>
 
 
-                       <!--Image and Button and Background-->
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      
-                           <!--image avatar-->
-      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                      
-<img class="w-20 h-20 rounded-full" src="/image/dipu.jpeg" alt="Rounded avatar">
-      </a>
+                <!---Tailwind Important configuration Here-->
+                <script>
+                  tailwind.config = {
+                    theme: {
+                      screens: {
+      'sm': '150px',
+      // => @media (min-width: 640px) { ... }
 
-                               
-                          <!--BUTTON-->
-      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
 
-        <div class="flex space-x-10">
-            <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">About</button>
-            <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Work</button>
-            <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">note</button>
-        </div>
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
 
-      </nav>
-      </div>
-      
-  </header>
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
 
-  <h1 class="text-4xl text-center font-Monoton, cursive;"> I am Dipu </h1>
-  <h2 class="text-center">A Web designer</h2>
-  &nbsp;
-  &nbsp;
-</div>
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    }
+  },
+        extend: {
 
+screens:{
+  'xs':{'min':'320px','max':'576px'},
+},
+                        colors: {
+                          
+                        }
+                      }
+                    }
+                  
+                </script>   
 
-<div class="flex-auto">
+<!----AdihadhaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily:{
+  sono:"'Dancing Script', cursive",
   
+}
+       
+      }
+    }
+  }
+</script>
+
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily:{
+  mono:" 'Patrick Hand', cursive",
+
+  
+}
+       
+      }
+    }
+  }
+</script>
+
+<!----AdihadhaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+
+
+</head>
+
+
+
+
+
+
+
+<body>
+
+ 
+<!--sob somoy container use korbo ar , Container Div e thake-->
+  <!--Important responsive Font to note :(class="text-3xl xs:text-center sm:text-center lg:text-center py-5 lg:py-10 ) -->
+  
+
+<div>
+
+<!--BAckground header  -->
+  
+<div class="h-96 w-100 bg-cyan-600">
+
+
+
+  <nav class="flex justify-between items-center">
+    <div class="p-5" ><img class=" w-20 h-20 rounded-full" src="/image/dipu.jpeg" alt="Rounded avatar"></div>
+    <ul class="flex gap-4">
+      <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Home</button>
+      <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">About</button>
+      <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Contact</button>
+    </ul>
+      </nav>
+
+    <p class="font-sono text-6xl xs:text-center sm:text-center lg:text-center py-5 lg:py-10">I am Dipu</p>
+    <p class="font-sono text-2xl xs:text-center sm:text-center lg:text-center py-5 lg:py-10">a web designer</p>
+
+  </div>
+
+<!---Body mid part -->
+<div class="bg-blue-200 flex-auto">
+
   &nbsp;
   &nbsp;
   <div class="flex justify-center items-center ">
@@ -62,169 +130,143 @@
     <img class="w-20 h-20 rounded-full" src="/image/dipu.jpeg" alt="Rounded avatar">
     
   </div>
-  <!--MID SECTION-->
-  &nbsp;
-  &nbsp;
-  
-    <div class="bg-gray-100 grid gap-12">
-      <h1 class="text-green-500 text-5xl text-center font-Monoton, cursive;"> Hi</h1>
-      &nbsp;
-      &nbsp;
-      &nbsp;
-      &nbsp;
-      <pre class="text-2xl text-center">
-        I'm a web designer / developer based 
-        in Dhaka,Bangladesh.
-       I have a passion for web design and love
-        to create for web and mobile devices.
-            
-            </pre>
-      &nbsp;
-      &nbsp;
-      &nbsp;
-      &nbsp;
-      
-      <h1 class="text-5xl text-lime-500 text-center">What Can I do</h1>
-      &nbsp;
-      &nbsp;
-      &nbsp;
-      &nbsp;
-      
-      
-      <h1 class="text-green-400 text-3xl text-center">Design what you want.</h1>
-      
-      <!---2-->
-      <div class="grid place-items-center">
-        <table class="table-auto">
-          <tbody>
-            <tr>
-              <td>
-                <pre class="text-3xl text-center">
-          
-                  I like to keep it simple. My goals are to focus on typography, 
-                  content and conveying the message that you want to send.</pre>
-                           &nbsp;&nbsp;
-                          </td>
-                <td><img class=" w-20 h-20 rounded-full" src="/image/dipu.jpeg" alt="Rounded avatar"></td>
-                
-              
-            </tr>
-          </tbody>
-        </table>
-        
-      </div>
-      &nbsp;
-      &nbsp;
-      &nbsp;
-      &nbsp;
-      <!--3-->
-      <h1 class="text-green-400 text-3xl text-center">Develop what you need.</h1>
-      
-      <div class="grid place-items-center">
-        <table class="table-auto">
-          <tbody>
-            <tr>
-                <td><img class=" w-20 h-20 rounded-full" src="/image/dipu.jpeg" alt="Rounded avatar"></td>
-                <td>
-                    <pre class="text-2xl text-center">
-            
-                      I'm a developer, so I know how to create your website to run
-                       across devices using the latest technologies available.</pre>
-                             &nbsp;&nbsp;
-                            </td>
-              
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      
-      
-      &nbsp;
-      &nbsp;
-      &nbsp;
-      &nbsp;
-      
-      <!--4-->
-      
-      <div class="py-9">
-        <h1 class="text-green-500 text-5xl text-center"> I can help.</h1>
-        &nbsp;
-        <h1 class="text-amber-900 text-2xl text-center"> I’m currently available for freelance work</h1>
-        &nbsp;
 
 
 
-
-
-
-
-
-
-          <pre class="text-2xl text-center">
-      If you have a project that
-      you want to get started,think you need my help 
-      with something or just fancy saying hey, then get in touch.
-            </pre>
-
-
-
-
-
-
-
-          
-      </div>
-      
-      </div>
-      
-      
-      <div class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <button class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded" >Massage ME</button>
-      </div>
-      
-      
-      
-      &nbsp;
-      
-      <!--Last Part-->
-      <div class="h-25 bg-gradient-to-r from-cyan-500 to-blue-500">
-        <div class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-         
-      
-            <div class="flex space-x-15">
-              <div class="grid gap-y-4 grid-cols-3">
-              <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Dribble</button>
-              <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Twitter</button>
-              <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Hire Me</button>
-          </div>
-      
-          </div>
-          
-      
-        </div>
-        <div class="text-center text-gray-700 p-4">
-          © 2021 Copyright:
-          <a class="text-gray-800" href="https://tailwind-elements.com/">Tailwind Elements</a>
-        </div>
-      </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 </div>
 
 
 
+<!--??????????????????????????????????????????????????????????-->
+
+<div class="bg-blue-200">
+  <!--  1 container---->
+  <p class="text-sky-500 font-mono text-6xl xs:text-center sm:text-center lg:text-center py-5 lg:py-10">Hi</p>
+  <div  class="whitespace-pre">
+    <p class=" text-2xl xs:text-center sm:text-center lg:text-center py-5 lg:py-10">
+I'm a web designer / developer based 
+in Dhaka,Bangladesh.I have a passion
+for webdesign and love to create for 
+   web and mobile devices.</p>
+  </div>
+  
+
+   <!--  2 -->
+   <p class="text-sky-500 font-mono text-6xl xs:text-center sm:text-center lg:text-center py-5 lg:py-10">What Can I Do.</p>
+   <p class="font-mono  text-5xl xs:text-center sm:text-center lg:text-center py-5 lg:py-10">Design what you want.</p>
+
+   <div class="grid place-items-center">
+    <table class="table-auto">
+      <tbody>
+        <tr class="flex justify-between items-center gap-20">
+          
+          
+            <td><img class=" w-20 h-20 rounded-full" src="/image/dipu.jpeg" alt="Rounded avatar"></td>
+            
+            <td>
+              <div  class="whitespace-pre">
+                <p class=" text-2xl xs:text-center sm:text-center lg:text-center py-5 lg:py-10">
+I like to keep it simple. My goals are to
+focus on typography, content and conveying
+the message that you want to send.
+                </p>
+              </div>
+            
+  
+                         &nbsp;&nbsp;
+                        </td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </div>
+  
+ 
+  
+   
+     <p class="font-mono text-5xl xs:text-center sm:text-center lg:text-center py-5 lg:py-10">  Develop what you need.</p>
+
+
+     <div class="grid place-items-center">
+      <table class="table-auto">
+        <tbody>
+          <tr class="flex justify-between items-center gap-20">
+            
+            <td>
+              <div  class="whitespace-pre">
+                <p class=" text-2xl xs:text-center sm:text-center lg:text-center py-5 lg:py-10">
+I'm a developer, so I know how to create your
+website to run across devices using the latest
+technologies available.
+                </p>
+              </div>
+          
+                         &nbsp;&nbsp;
+                        </td>
+              <td><img class=" w-20 h-20 rounded-full" src="/image/dipu.jpeg" alt="Rounded avatar"></td>
+              
+            
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
+    
+        <!-- 3 -->
+        <p class="text-sky-500 font-mono text-6xl xs:text-center sm:text-center lg:text-center py-5 lg:py-10">I Can Help.</p>
+        <p class="font-mono text-2xl xs:text-center sm:text-center lg:text-center py-5 lg:py-10">I’m currently available for freelance work.</p>
+        <div  class="whitespace-pre">
+        <p class=" text-2xl xs:text-center sm:text-center lg:text-center py-5 lg:py-10">
+If you have a project that you want to get 
+started,think you need my help with 
+something or just fancy saying hey, 
+then get in touch.
+          </p>
+  </div>
+
+
+  <div class="grid justify-items-center">
+    <button  type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      Massage ME</button>
+  </div>
+  
+
+        </div>
 
 
 
+        
 
+
+
+        <!-------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---Under construction /// Practice site  -->   
+
+
+<div class="h-70 w-100 bg-gradient-to-r from-cyan-500 to-blue-500">
+
+
+  <div class="grid justify-items-center p-5"> 
+    <ul class="flex gap-4 ">
+      <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Home</button>
+      <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">About</button>
+      <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Contact</button>
+    </ul>
+  
+  </div>
+  <p class="text-1xl grid justify-items-center">© 2022 Dipu. All rights reserved.</p>
+  
+    </div>
+  
+  
+  <!--Practice here-->
+  <!-------------------------------------------------------------------------------------------------------------------------------------------------->
+  
+ 
+
+
+</div>
+
+  
 </body>
 </html>
